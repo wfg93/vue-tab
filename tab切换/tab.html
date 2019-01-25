@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/css.css"/>
+</head>
+<body>
+<div class="tab">
+    <ul class="tab-list">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <ul class="tab-content">
+        <li style="background-color:cornflowerblue;">我是one</li>
+        <li style="display: none;background-color: burlywood;">我是two</li>
+        <li style="display: none;background-color:mediumaquamarine;">我是three</li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript">
+    var a1 = document.querySelectorAll('.tab-list li');
+    var a2 = document.querySelectorAll('.tab-content li');
+    for (var i = 0; i < a1.length; i++) {
+
+
+        a1[i].index = i
+
+
+        a1[i].onclick = function () {
+
+
+            for (var e = 0; e < a2.length; e++) {
+                a2[e].style.display = 'none'
+            }
+            a2[this.index].style.display = "block"
+
+
+
+            for (var i = 0; i < a1.length; i++) {
+                a1[i].style.background = "none";
+            }
+
+            a1[this.index].style.background = "indianred"
+        }
+
+
+
+    }
+
+</script>
+</html>

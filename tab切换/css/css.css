@@ -1,0 +1,38 @@
+li {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tab-list {
+    text-align: center;
+    line-height: 40px;
+    font-family: "微软雅黑";
+    height: 40px;
+    border-bottom: none;
+}
+
+.tab-list li {
+    float: left;
+    border: 1px solid #000;
+    border-right: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.tab-list li:last-of-type {
+    border-right: 1px solid #000;
+}
+
+.tab-content li {
+
+    width: 302px;
+    height: 300px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 300px;
+    margin-top: 0px;
+}
